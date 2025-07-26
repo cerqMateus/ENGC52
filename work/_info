@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+vAcumulador
+Z0 !s110 1753537851
+!i10b 1
+!s100 QS6L2z>4L`Ra4MYcPec7T3
+ILaPJAVU=<A:CZ8kSmc5zP3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/ENGC52
+w1753530877
+8C:/ENGC52/modulos/acumulador.v
+FC:/ENGC52/modulos/acumulador.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1753537851.000000
+!s107 C:/ENGC52/modulos/acumulador.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/ENGC52/modulos/acumulador.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@acumulador
+vFSM
+R0
+!i10b 1
+!s100 c;UWNR4h]HYA>>>nl@a1:1
+IMLAC]1faY]4ecUd2]eZW>1
+R1
+R2
+w1753530925
+8C:/ENGC52/modulos/fsm.v
+FC:/ENGC52/modulos/fsm.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/ENGC52/modulos/fsm.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/ENGC52/modulos/fsm.v|
+!i113 1
+R5
+R6
+n@f@s@m
+vTOP
+!s110 1753538857
+!i10b 1
+!s100 WD81beA=<B;gHEFSXH;_V1
+IX6_Ii<SRR5BVPSm>=;mOU1
+R1
+R2
+w1753538812
+8C:/ENGC52/modulos/top.v
+FC:/ENGC52/modulos/top.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1753538857.000000
+!s107 C:/ENGC52/modulos/top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/ENGC52/modulos/top.v|
+!i113 1
+R5
+R6
+n@t@o@p
+vTOP_tb
+!s110 1753538445
+!i10b 1
+!s100 Sknf]N?TEWOLl<XUXK78c3
+I<F<Q6OU[zNXBi;A]VGkfR2
+R1
+R2
+w1753538438
+8C:/ENGC52/testbench/test.v
+FC:/ENGC52/testbench/test.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1753538445.000000
+!s107 C:/ENGC52/testbench/test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/ENGC52/testbench/test.v|
+!i113 1
+R5
+R6
+n@t@o@p_tb

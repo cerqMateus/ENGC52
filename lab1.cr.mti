@@ -1,0 +1,29 @@
+C:/ENGC52/modulos/top.v {1 {vlog -work work -stats=none C:/ENGC52/modulos/top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TOP
+
+Top level modules:
+	TOP
+
+} {} {}} C:/ENGC52/modulos/acumulador.v {1 {vlog -work work -stats=none C:/ENGC52/modulos/acumulador.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Acumulador
+
+Top level modules:
+	Acumulador
+
+} {} {}} C:/ENGC52/testbench/test.v {1 {vlog -work work -stats=none C:/ENGC52/testbench/test.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module TOP_tb
+
+Top level modules:
+	TOP_tb
+
+} {} {}} C:/ENGC52/modulos/fsm.v {1 {vlog -work work -stats=none C:/ENGC52/modulos/fsm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module FSM
+
+Top level modules:
+	FSM
+
+} {} {}}

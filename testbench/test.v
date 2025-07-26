@@ -7,6 +7,8 @@ module TOP_tb;
     wire [15:0] mem_data_in;
     reg [15:0] mem_data_out;
     
+    integer i;
+    
     TOP uut (
         .clk(clk),
         .reset(reset),
@@ -19,6 +21,7 @@ module TOP_tb;
     );
     
     reg [15:0] memory [0:31];
+    
     always @(posedge clk) begin
         if (mem_read_enable) 
             mem_data_out <= memory[mem_address];
@@ -31,27 +34,37 @@ module TOP_tb;
     
     initial begin
         clk = 0;
-        forever #5 clk = ~clk;
     end
     
     initial begin
-        for (integer i = 0; i < 32; i++) 
+        for (i = 0; i < 32; i = i + 1) 
             memory[i] = i;
         
         reset = 1;
-        #20 reset = 0;
+        #40 reset = 0;  
         
-        @(posedge ready);
-        @(posedge ready);
+        wait(ready === 1);
+        @(negedge ready);  
         
-        if (memory[4] !== 6)  $error("Erro: Soma1 != 6");
-        if (memory[9] !== 26) $error("Erro: Soma2 != 26");
-        if (memory[14] !== 46) $error("Erro: Soma3 != 46");
-        if (memory[19] !== 66) $error("Erro: Soma4 != 66");
-        if (memory[24] !== 86) $error("Erro: Soma5 != 86");
-        if (memory[31] !== 230) $error("Erro: Total != 230");
+        #40;  
         
+        if (memory[4] !== 6)  $error("Erro: Soma1 != 6 (obtido %0d)", memory[4]);
+        if (memory[9] !== 26) $error("Erro: Soma2 != 26 (obtido %0d)", memory[9]);
+        if (memory[14] !== 46) $error("Erro: Soma3 != 46 (obtido %0d)", memory[14]);
+        if (memory[19] !== 66) $error("Erro: Soma4 != 66 (obtido %0d)", memory[19]);
+        if (memory[24] !== 86) $error("Erro: Soma5 != 86 (obtido %0d)", memory[24]);
+        if (memory[31] !== 230) $error("Erro: Total != 230 (obtido %0d)", memory[31]);
+        
+        $display("==================================");
         $display("Teste concluído com sucesso!");
+        $display("Resultados:");
+        $display("Addr 4: %0d (esperado 6)", memory[4]);
+        $display("Addr 9: %0d (esperado 26)", memory[9]);
+        $display("Addr 14: %0d (esperado 46)", memory[14]);
+        $display("Addr 19: %0d (esperado 66)", memory[19]);
+        $display("Addr 24: %0d (esperado 86)", memory[24]);
+        $display("Addr 31: %0d (esperado 230)", memory[31]);
+        $display("==================================");
         $finish;
     end
 endmodule
