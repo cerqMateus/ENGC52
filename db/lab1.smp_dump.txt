@@ -1,0 +1,15 @@
+
+State Machine - |TOP|FSM:fsm_inst|state
+Name state.READY2 state.READY1 state.WRITE_TOTAL state.WAIT_READ_RESULT state.SET_ADDR_READ_RESULT state.RESET_ACCUM_FINAL state.NEXT_SET state.WRITE_RESULT state.WAIT_READ state.SET_ADDR_READ state.RESET_ACCUM state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 
+state.RESET_ACCUM 0 0 0 0 0 0 0 0 0 0 1 1 
+state.SET_ADDR_READ 0 0 0 0 0 0 0 0 0 1 0 1 
+state.WAIT_READ 0 0 0 0 0 0 0 0 1 0 0 1 
+state.WRITE_RESULT 0 0 0 0 0 0 0 1 0 0 0 1 
+state.NEXT_SET 0 0 0 0 0 0 1 0 0 0 0 1 
+state.RESET_ACCUM_FINAL 0 0 0 0 0 1 0 0 0 0 0 1 
+state.SET_ADDR_READ_RESULT 0 0 0 0 1 0 0 0 0 0 0 1 
+state.WAIT_READ_RESULT 0 0 0 1 0 0 0 0 0 0 0 1 
+state.WRITE_TOTAL 0 0 1 0 0 0 0 0 0 0 0 1 
+state.READY1 0 1 0 0 0 0 0 0 0 0 0 1 
+state.READY2 1 0 0 0 0 0 0 0 0 0 0 1 
