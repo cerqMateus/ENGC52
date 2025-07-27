@@ -13,7 +13,7 @@ module TOP_tb;
         .clk(clk),
         .reset(reset),
         .ready(ready),
-        .mem_address(mem_address),
+        .mem_address(mem_address),  
         .mem_read_enable(mem_read_enable),
         .mem_write_enable(mem_write_enable),
         .mem_data_in(mem_data_in),
